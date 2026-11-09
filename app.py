@@ -325,7 +325,7 @@ with tab1:
         with btn_col1:
             if st.button("🔊 Play Verified KFS (Gnani Timbre v2.5)", type="primary", use_container_width=True):
                 wav_path, tpl_hash = tts_enforcer.synthesize_or_get_cached(kfs_text)
-                st.audio(str(wav_path), format="audio/wav")
+                st.audio(str(wav_path))
                 t_now = time.time()
                 receipt = tts_enforcer.verify_playback_completion(
                     tpl_hash, t_now - 14.5, t_now, expected_min_duration_sec=12.0
