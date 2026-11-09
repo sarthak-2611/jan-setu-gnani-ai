@@ -1,0 +1,8 @@
+torch
+transformers
+sentencepiece
+gnani-vachana
+python-dotenv
+requests
+google-genai
+streamlit
